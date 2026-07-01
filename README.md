@@ -6,12 +6,8 @@
 [![npm version](https://img.shields.io/npm/v/@seneca/memcached-cache.svg)](https://npmjs.com/package/@seneca/memcached-cache)
 [![build](https://github.com/senecajs/seneca-memcached-cache/actions/workflows/build.yml/badge.svg)](https://github.com/senecajs/seneca-memcached-cache/actions/workflows/build.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/senecajs/seneca-memcached-cache/badge.svg)](https://snyk.io/test/github/senecajs/seneca-memcached-cache)
-[![Npm][BadgeNpm]][Npm]
-[![Travis][BadgeTravis]][Travis]
-[![Coveralls][BadgeCoveralls]][Coveralls]
 [![DeepScan grade](https://deepscan.io/api/teams/5016/projects/12817/branches/203963/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5016&pid=12817&bid=203963)
 [![Maintainability](https://api.codeclimate.com/v1/badges/ede9a6d19d8c3a75315a/maintainability)](https://codeclimate.com/github/senecajs/seneca-memcached-cache/maintainability)
-[![Gitter][gitter-badge]][gitter-url]
 
 | ![Voxgig](https://www.voxgig.com/res/img/vgt01r.png) | This open source module is sponsored and supported by [Voxgig](https://www.voxgig.com). |
 |---|---|
@@ -54,24 +50,17 @@ If you're using this module and need help, you can:
 
 * `` : object <i><small>"&nbsp;"</small></i>
 
-
 Set plugin options when loading with:
 ```js
 
-
 seneca.use('memcached-cache', { name: value, ... })
 
-
 ```
-
 
 <small>Note: <code>foo.bar</code> in the list above means 
 <code>{ foo: { bar: ... } }</code></small> 
 
-
-
 <!--END:options-->
-
 
 <!--START:action-list-->
 
@@ -100,7 +89,6 @@ seneca.use('memcached-cache', { name: value, ... })
 * [role:cache,cmd:set](#-rolecachecmdset-)
 * [role:cache,get:native](#-rolecachegetnative-)
 
-
 <!--END:action-list-->
 
 <!--START:action-desc-->
@@ -111,157 +99,112 @@ seneca.use('memcached-cache', { name: value, ... })
 
 No description provided.
 
-
-
 ----------
 ### &laquo; `cmd:append,plugin:memcached-cache` &raquo;
 
 No description provided.
-
-
 
 ----------
 ### &laquo; `cmd:cas,plugin:memcached-cache` &raquo;
 
 No description provided.
 
-
-
 ----------
 ### &laquo; `cmd:decr,plugin:memcached-cache` &raquo;
 
 No description provided.
-
-
 
 ----------
 ### &laquo; `cmd:delete,plugin:memcached-cache` &raquo;
 
 No description provided.
 
-
-
 ----------
 ### &laquo; `cmd:flush,plugin:memcached-cache` &raquo;
 
 No description provided.
-
-
 
 ----------
 ### &laquo; `cmd:get,plugin:memcached-cache` &raquo;
 
 No description provided.
 
-
-
 ----------
 ### &laquo; `cmd:gets,plugin:memcached-cache` &raquo;
 
 No description provided.
-
-
 
 ----------
 ### &laquo; `cmd:incr,plugin:memcached-cache` &raquo;
 
 No description provided.
 
-
-
 ----------
 ### &laquo; `cmd:prepend,plugin:memcached-cache` &raquo;
 
 No description provided.
-
-
 
 ----------
 ### &laquo; `cmd:replace,plugin:memcached-cache` &raquo;
 
 No description provided.
 
-
-
 ----------
 ### &laquo; `cmd:set,plugin:memcached-cache` &raquo;
 
 No description provided.
-
-
 
 ----------
 ### &laquo; `cmd:stats,plugin:memcached-cache` &raquo;
 
 No description provided.
 
-
-
 ----------
 ### &laquo; `init:memcached-cache` &raquo;
 
 No description provided.
-
-
 
 ----------
 ### &laquo; `role:cache,cmd:add` &raquo;
 
 No description provided.
 
-
-
 ----------
 ### &laquo; `role:cache,cmd:clear` &raquo;
 
 No description provided.
-
-
 
 ----------
 ### &laquo; `role:cache,cmd:decr` &raquo;
 
 No description provided.
 
-
-
 ----------
 ### &laquo; `role:cache,cmd:delete` &raquo;
 
 No description provided.
-
-
 
 ----------
 ### &laquo; `role:cache,cmd:get` &raquo;
 
 No description provided.
 
-
-
 ----------
 ### &laquo; `role:cache,cmd:incr` &raquo;
 
 No description provided.
-
-
 
 ----------
 ### &laquo; `role:cache,cmd:set` &raquo;
 
 No description provided.
 
-
-
 ----------
 ### &laquo; `role:cache,get:native` &raquo;
 
 No description provided.
 
-
-
 ----------
-
 
 <!--END:action-desc-->
 
@@ -288,7 +231,6 @@ To access the underlying [memcached instance](https://github.com/3rd-Eden/node-m
 use the action _plugin:memcached, cmd:native_.
 
 The plugin also registers with the action _role:seneca, cmd:close_. This closes the memcached connection when you call the _seneca.close_ method.
-
 
 ### Options
 
