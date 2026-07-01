@@ -23,9 +23,23 @@ You'll also need [memcached](http://memcached.org/)
 
 ## Quick Example
 
+This code snippet sets a value and then retrieves it. You'll need to have memcached running for this to work:
+
+```sh
+$ memcached -vv
+```
+
 ```js
-require('seneca')()
-  .use('seneca-memcached-cache')
+var seneca = require('seneca')();
+seneca.use('memcached-cache');
+
+seneca.ready(function(err) {
+  seneca.act({role: 'cache', cmd: 'set', key: 'k1', val: 'v1'}, function(err) {
+    seneca.act({role: 'cache', cmd: 'get', key: 'k1'}, function(err, out) {
+      console.log('value = ' + out)
+    });
+  });
+});
 ```
 
 ## More Examples
